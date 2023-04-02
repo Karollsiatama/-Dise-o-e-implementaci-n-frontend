@@ -8,3 +8,24 @@ img{
     width: 150px;
     height: 150px;
 }
+div{     
+    justify-content: center;   
+}
+a{
+    justify-content: center;
+}
+button{
+    justify-content: center;
+}
+script{
+    justify-content: center;
+}
+ul{
+    justify-content: center;
+}
+li{
+    justify-content: center;
+}
+nav{
+    justify-content: center;
+}
