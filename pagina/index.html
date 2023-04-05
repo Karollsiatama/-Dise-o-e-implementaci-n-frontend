@@ -1,61 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
-    <title>Fase 3 </title>
-    <link rel="stylesheet" href="../CSS/bootstrap-4.1.3-dist/css/bootstrap.min.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <img src="../img/what-is-html.jpg"class="rounded float-start" onClick="cambiar(this );"/>
-    <img src="../img/fondo.jpg" class="rounded float-end" onClick="cambiar(this);"/>
+    <title>Fronted</title>
+  </head>
 
-    <script>
-        function cambiar(a) {
-            if ( a.tagName == "IMG"){
-                document.body.style.backgroundImage="url("+ a.src +")"; 
-            }
-        }
-    </script>
-    
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+  <body class="Aplicacion-fronted">
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Administrador</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Inventario</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Utilidades
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Ingresar Producto</a></li>
-                  <li><a class="dropdown-item" href="#">Actualizar Producto</a></li>
-                  <li><a class="dropdown-item" href="#">Eliminar Producto</a></li>
-                </ul>
-              </li>
-            </ul>
+    <style>
+
+      body{
+        background-image: url(../img/fondo.jpg);
+      }
+      div{
+        display: flex;  justify-content:space-around; text-align: center;
+      }
+    </style>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Administrador.html">Administrador</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="Inventario.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Inventario
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="ingresar producto.html">Ingresar producto</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="actualizar producto.html">Actualizar producto</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="eliminar producto.html">Eliminar producto</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="utilidades.html">Utilidades</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>  
+    
+<br><br>
+    <div class="alert alert-light" role="alert">
+      Estudiante : Karoll Eliana Siatama Ortiz codigo: 1007106816
+    </div>
+<br><br>
+    <div id="carouselExampleCaptions" class="carousel slide ">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../img/html-jv-css.png" class="d-block"  alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>metodos aplicados en el proyecto</h5>
+            <p>agregacion de bootstrap 5 en css y min.js </p>
           </div>
         </div>
-      </nav>
+        <div class="carousel-item">
+          <img src="../img/familia,tec.jpeg" class="d-block" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-    <script src="../CSS/jquery-3.6.4.min.js"></script>
-    <script src="../CSS/bootstrap-4.1.3-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"> </script>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
